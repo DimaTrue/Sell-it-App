@@ -1,0 +1,23 @@
+@import '../../../styles/variables.scss';
+
+.list {
+  width: 320px;
+  height: 250px;
+  background-color: $page-color;
+  margin: 13px;
+}
+
+.pic {
+width: 320px;
+height: 200px;
+}
+
+.panel {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.link {
+  color: $font-color;
+}

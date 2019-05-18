@@ -1,0 +1,29 @@
+@import '../../../styles/variables.scss';
+
+.form {
+  @extend %form-style;
+}
+
+.form:focus {
+  border-bottom: 2px solid $border-color;
+}
+
+.formInput {
+  @extend %inputs-style;
+}
+
+.formInput::placeholder {
+  color: #fff;
+}
+
+.formButton {
+  @extend %all-buttons;
+}
+
+.formButton:hover {
+  border-bottom: 3px solid $border-color;
+}
+
+.link {
+  color: $btn-color;
+}

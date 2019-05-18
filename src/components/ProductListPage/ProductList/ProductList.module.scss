@@ -1,0 +1,62 @@
+@import '../../../styles/variables.scss';
+
+.section {
+  margin-top: 80px;
+  min-height: calc(100vh - 131px);
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto 0;
+}
+
+.productList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+/* .......................media........................*/
+
+@media screen and (max-width: 1400px) {
+  .container {
+    max-width: 1140px;
+    margin: 0 auto 0;
+
+    .productList {
+      justify-content: space-between;
+    }
+  }
+}
+
+@media screen and (max-width: 1055px) {
+  .container {
+    max-width: 740px;
+    margin: 0 auto 0;
+
+    .productList {
+      justify-content: space-between;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section {
+    margin-top: 200px;
+  }
+  .productList {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 707px) {
+
+  .container {
+    max-width: 500px;
+    margin: 0 auto 0;
+
+  .productList {
+    justify-content: center;
+  }
+}
+}

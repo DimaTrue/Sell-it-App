@@ -1,0 +1,89 @@
+@import '../../../styles/variables.scss';
+
+.userMenu {
+  background-color: $page-color;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 350px;
+}
+
+.link {
+  text-decoration: none;
+  color: $link-color;
+}
+
+.notAuthorizated {
+  padding: 15px;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.userMenu:hover {
+  border-left: 3px solid #4a4a4a;
+}
+
+.userMenu:hover .submenu {
+  display: block;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.avatar {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.logout {
+  margin-right: 20px;
+}
+
+.submenu {
+  padding: 5px 10px 0 10px;
+  display: none;
+  text-align: center;
+}
+
+.text {
+  padding-right: 20px;
+}
+
+.profile {
+  border-left: 3px solid #4a4a4a;
+  padding: 1px 40px 2px 50px;
+}
+
+.submenuLink {
+  color: #fff;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* .......................media........................*/
+@media screen and (max-width: 900px) {
+  .userMenu {
+    order: -1;
+    position: relative;
+    padding: 5px;
+    width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* .......................media........................*/
+@media screen and (max-width: 500px) {
+  .userMenu {
+    width: 320px;
+  }
+}

@@ -1,0 +1,71 @@
+@import '../../../styles/variables.scss';
+
+.main {
+  display: flex;
+  height: 100vh;
+  background-color: $page-color;
+}
+
+/* .......................left section........................*/
+.bg {
+  flex-grow: 1;
+  background-color: $bg-color;
+  position: relative;
+}
+
+.picture {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  max-width: 100%;
+}
+
+/* .......................right section........................*/
+.loginPage {
+  padding: 60px 25px 20px 25px;
+  text-align: center;
+  min-width: 300px;
+  position: relative;
+}
+
+.logoBlock {
+  margin-bottom: 70px;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  @extend %all-buttons;
+  @extend %btns-shared;
+}
+
+.button:hover {
+  border-bottom: 3px solid $border-color;
+}
+
+.copy {
+  position: absolute;
+  bottom: 10px;
+  left: 30%;
+  font-size: $font-size-base;
+}
+
+
+/* .......................media........................*/
+
+@media screen and (max-width: 800px) {
+
+  .bg {
+    display: none;
+  }
+
+  .loginPage {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}

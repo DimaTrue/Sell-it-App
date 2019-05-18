@@ -1,0 +1,41 @@
+/* .......................variables........................*/
+$color-light: #f2f2f2;
+$base-bg: #eee6e3;
+$font-color: #fff;
+$bg-color: #eee6e3;
+$page-color: #00b3be;
+$btn-color: #4a4a4a;
+$border-color: #91d763;
+$link-color: #376467;
+
+$font-size-base: 14px;
+
+/* .......................extends........................*/
+%btns-shared {
+  width: 110px;
+  margin-bottom: 50px;
+}
+
+%all-buttons {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+  outline: none;
+  color: $btn-color;
+  background-color: $color-light;
+}
+
+%form-style {
+  display: flex;
+  flex-direction: column;
+}
+
+%inputs-style {
+  border-bottom: 2px solid #fff;
+  background-color: inherit;
+  color: #fff;
+  margin-bottom: 15px;
+  outline: none;
+  text-indent: 10px;
+}
+

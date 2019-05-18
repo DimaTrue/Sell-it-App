@@ -1,0 +1,60 @@
+@import '../../../styles/variables.scss';
+
+.searchBlock {
+  position: relative;
+  width: 30%;
+  right: 550px;
+}
+
+.input {
+  border: none;
+  border-bottom: 2px solid $page-color;
+  background-color: inherit;
+  outline: none;
+  padding: 15px 4px 8px 4px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  text-indent: 17px;
+  width: 100%;
+}
+
+.img {
+  position: absolute;
+  top: 14px;
+  left: 50px;
+  margin-left: -23px;
+  padding-bottom: 5px;
+}
+
+/* .......................media........................*/
+@media screen and (max-width: 1165px) {
+
+  .searchBlock {
+    right: 50%;
+  }
+
+  .input {
+    max-width: 220px;
+    text-indent: 25px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+
+    .searchBlock {
+      right: auto;
+      margin: 0 auto;
+      width: 320px;
+    }
+
+    .input {
+      max-width: 320px;
+      margin: 0;
+    }
+
+    .img {
+      margin-left: -30px;
+      left: 30px;
+    }
+  
+  }

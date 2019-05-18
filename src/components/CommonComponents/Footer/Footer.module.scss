@@ -1,0 +1,9 @@
+@import '../../../styles/variables.scss';
+
+.footer {
+  background-color: $page-color;
+  position: sticky;
+  bottom: 0;
+  padding: 15px;
+  text-align: center;
+}
