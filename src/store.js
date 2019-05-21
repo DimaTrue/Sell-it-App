@@ -14,7 +14,8 @@ export function StoreProvider(props) {
     },
     user: {
       isLoading: false,
-      isAuthentificated: false,
+      isLogin: !!localStorage.token,
+      user: {},
     }
   };
   const [state, dispatch] = React.useReducer(reducer, initialState);

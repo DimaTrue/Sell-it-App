@@ -18,6 +18,7 @@
 
 .formButton {
   @extend %all-buttons;
+  margin-top: 15px;
 }
 
 .formButton:hover {

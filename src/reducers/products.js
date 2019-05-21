@@ -21,19 +21,19 @@ function products(state = init, action) {
     case FETCH_PRODUCTS_INIT:
       return { ...state, isLoading: true, };
 
-      case FETCH_PRODUCTS_SUCCESS:
+    case FETCH_PRODUCTS_SUCCESS:
       return { ...state, data: action.payload, isLoading: false, };
 
-      case FETCH_PRODUCTS_FAILURE:
+    case FETCH_PRODUCTS_FAILURE:
       return { ...state, errorData: action.payload, isLoading: false, };
 
     case FETCH_PRODUCT_ITEM_INIT:
       return { ...state, isLoading: true, };
 
-      case FETCH_PRODUCT_ITEM_SUCCESS:
+    case FETCH_PRODUCT_ITEM_SUCCESS:
       return { ...state, dataItem: action.payload, isLoading: false, };
 
-      case FETCH_PRODUCT_ITEM_FAILURE:
+    case FETCH_PRODUCT_ITEM_FAILURE:
       return { ...state, errorDataItem: action.payload, isLoading: false, };
 
     default:

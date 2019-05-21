@@ -25,16 +25,29 @@ $font-size-base: 14px;
   background-color: $color-light;
 }
 
+%return-btn {
+  color: $page-color;
+  padding: 15px;
+  border: 1px solid $page-color;
+  transition: ease-in-out 0.5s;
+}
+
+%hover-return-btn {
+  color: $bg-color;
+  background-color: $page-color;
+}
+
 %form-style {
   display: flex;
   flex-direction: column;
+  margin-top: 50px;
 }
 
 %inputs-style {
   border-bottom: 2px solid #fff;
   background-color: inherit;
   color: #fff;
-  margin-bottom: 15px;
+  margin-top: 15px;
   outline: none;
   text-indent: 10px;
 }

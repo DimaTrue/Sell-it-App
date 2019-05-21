@@ -5,7 +5,9 @@
   height: 100vh;
   background-color: $page-color;
 }
-
+a {
+  color: $btn-color;
+}
 /* .......................left section........................*/
 .bg {
   flex-grow: 1;
@@ -41,11 +43,23 @@
 .button {
   @extend %all-buttons;
   @extend %btns-shared;
+  margin-bottom: 0;
+  font-size: 12px;
+  font-weight: normal;
 }
 
 .button:hover {
+  background-color: darken($color-light, 10%,);
+}
+
+.button:active {
+  background-color: darken($color-light, 20%,);
+}
+
+.active {
   border-bottom: 3px solid $border-color;
 }
+
 
 .copy {
   position: absolute;

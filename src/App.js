@@ -1,10 +1,12 @@
 import React, { Fragment } from 'react';
 import './styles/App.scss';
+import history from './history';
 import Login from './components/LoginPage/Login/Login';
 import WrongPath from './components/WrongPath/WrongPath';
 import ProductList from './components/ProductListPage/ProductList/ProductList';
 import ProductItemPage from './components/ProductItemPage/ProductItemPage';
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Profile from './components/Profile/Profile';
+import { Router, Switch, Route } from "react-router-dom";
 import ErrorBoundary from './components/CommonComponents/ErrorBoundary/ErrorBoundary';
 import Loading from './components/CommonComponents/Loading/Loading';
 import { Store } from './store';
@@ -16,7 +18,7 @@ const App = () => {
 
   React.useEffect(() => {
     products.data.length === 0 && fetchProducts(dispatch);
-  }, [products]);
+  }, []);
 
   if (products.isLoading) {
     return (
@@ -26,14 +28,15 @@ const App = () => {
     )
   } else {
     return (
-      <BrowserRouter>
+      <Router history={history}>
         <Switch>
           <Route path='/login' component={() => <ErrorBoundary><Login /></ErrorBoundary>} />
           <Route path='/' exact component={() => <ErrorBoundary><ProductList {...products} /> </ErrorBoundary>} />
           <Route path='/product/:id' component={ProductItemPage} />
+          <Route path='/profile' component={Profile} />
           <Route component={() => <ErrorBoundary><WrongPath /></ErrorBoundary>} />
         </Switch>
-      </BrowserRouter>
+      </Router>
     )
   }
 }

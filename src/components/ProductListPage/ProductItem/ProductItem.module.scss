@@ -12,6 +12,11 @@ width: 320px;
 height: 200px;
 }
 
+.pic:hover {
+  transition: ease-in-out 0.2s;
+  transform: translateY(-5px);
+}
+
 .panel {
   display: flex;
   justify-content: space-between;
